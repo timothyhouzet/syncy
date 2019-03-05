@@ -1,6 +1,6 @@
 # Syncy (Experimental)
 
-A simple rsync GUI.
+This is an attempt to create a simple rsync GUI using [Electron](https://electronjs.org/).
 
 ### Requirements
 

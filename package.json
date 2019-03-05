@@ -2,7 +2,7 @@
   "name": "syncy",
   "productName": "Syncy",
   "version": "1.0.0",
-  "description": "Simple rsync GUI",
+  "description": "A simple rsync GUI",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
