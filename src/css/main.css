@@ -1,0 +1,102 @@
+/* http://paletton.com/#uid=1170u0kpLtCfYEzl2vQtzoYvZjO */
+body {
+    position: relative;
+    padding-top: 15px; 
+    color: #cccccc;
+    background-color: #333333;
+    font-family: 'Abel', sans-serif;
+}
+a {
+    color: #cccccc;
+}
+a:hover:not(.btn),
+a:focus:not(.btn) {
+    color: #cccccc;
+}
+h1 {
+    /* margin-top: 15px;  */
+    /* font-family: 'Lakki Reddy', cursive; */
+    color: #cccccc;
+}
+.background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url('../image/background.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.icon {
+    z-index: 0;
+    position: fixed;
+    top: 15px;
+    bottom: auto;
+    right: 0;
+    left: 0;
+    width: 128px;
+    height: 128px;
+    background-image: url('../icon/nuck-chorris-128x128.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.credit {
+    padding: 10px;
+}
+.options {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Custom Form Control */
+::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+    opacity: 1;
+}
+.form-control,
+.form-control[readonly] {
+    color: #cccccc;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-control:focus,
+.form-control:hover,
+.form-control[readonly]:focus,
+.form-control[readonly]:hover {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-control:hover,
+.form-control[readonly]:hover {
+    border-color: #cccccc;
+}
+
+/* Custom Bootstrap Button */
+.btn-primary {
+    border: 0 solid transparent;
+}
+  
+.btn-primary:hover {
+    border-color: #cccccc;
+}
+  
+.btn-primary:focus, 
+.btn-primary.focus {
+    box-shadow: none;
+}
+  
+.btn-custom:not(:disabled):not(.disabled):active:focus, 
+.btn-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-custom.dropdown-toggle:focus {
+    box-shadow: none;
+}

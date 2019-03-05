@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Syncy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lakki+Reddy|Abel">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-6 offset-3 text-center">
+                <h1>Syncy <small>(Experimental)</small></h1>
+                <p>Click the 'sync' button below to attempt a sync.</p>
+            </div>
+            <div class="col-2 offset-1">
+                <div class="options">
+                    <h5>Options</h5>
+                    <div class="form-check">
+                        <label for="exclude" class="form-check-label">
+                            <input type="checkbox" class="exclude form-check-input" id="exclude" title="A list of items to exclude from syncing">Exclude
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="delete" class="form-check-label">
+                            <input type="checkbox" class="delete form-check-input" id="delete" title="Delete destination files that are not in the source folder">Delete
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <div class="form-group">
+                    <label for="source">Source</label>
+                    <input type="text" class="source form-control" id="source" placeholder="Select a Source" readonly>
+                    <!-- <input type="file" class="form-control source" id="source" webkitdirectory> -->
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" class="destination form-control" id="destination" placeholder="Select a Destination" readonly>
+                    <!-- <input type="file" class="form-control destination" id="destination" webkitdirectory> -->
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-group">
+                    <label for="">&nbsp;</label>
+                    <button class="sync btn btn-primary btn-block"><i class="fas fa-sync-alt fa-fw"></i> SYNC</button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="output">Output</label>
+                    <textarea name="output" class="output form-control" id="output" cols="30" rows="10" readonly="readonly"></textarea>
+                </div>
+                <div class="form-group text-center">
+                    <button class="cancel btn btn-danger d-none"><i class="fas fa-ban fa-fw"></i> CANCEL</button>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-bottom text-center">
+            <div><a class="credit" href="https://rsync.samba.org">https://rsync.samba.org</a></div>
+        </div>
+    </div>
+    <script src="js/sync.js"></script>
+</body>
+</html>
