@@ -16,7 +16,7 @@ To build the app *(only tested on macOS High Sierra Version 10.13.6)*, cd to the
 
 ### Credits
 
-Thank you to [https://rsync.samba.org](https://rsync.samba.org)!
+[https://rsync.samba.org](https://rsync.samba.org).
 
 ## Notes
 
