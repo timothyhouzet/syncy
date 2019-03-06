@@ -33,7 +33,6 @@ const sync = () => {
     console.log('Destination: ' + destination)
     console.log('Exclude Option: ' + exclude_option)
     console.log('Delete Option: ' + delete_option)
-
     console.log('Syncing...')
 
     const cmd = `${__dirname}/rsync/bin/rsync`
@@ -53,7 +52,7 @@ const sync = () => {
     
     const rsync = spawn(cmd, args)
 
-    rsync.stdout.on('data', data => {
+    rsync.stdout.on('data', (data) => {
         cancelButton.classList.remove('d-none')
         syncButtonIcon.classList.add('fa-spin')
         // console.log(`${data}`)
@@ -61,7 +60,7 @@ const sync = () => {
         outputTextArea.scrollTop = outputTextArea.scrollHeight 
     })
 
-    rsync.stderr.on('data', data => {
+    rsync.stderr.on('data', (data) => {
         cancelButton.classList.remove('d-none')
         syncButtonIcon.classList.add('fa-spin')
         // console.log(`${data}`)
@@ -69,7 +68,7 @@ const sync = () => {
         outputTextArea.scrollTop = outputTextArea.scrollHeight 
     })
 
-    rsync.on('close', code => {
+    rsync.on('close', (code) => {
         syncButton.disabled = false
         cancelButton.classList.add('d-none')
         syncButtonIcon.classList.remove('fa-spin')
@@ -85,7 +84,7 @@ const sync = () => {
 // Init
 
 // Source
-sourceInput.addEventListener('click', () => {
+sourceInput.addEventListener('click', (event) => {
     let path = dialog.showOpenDialog({
         properties: ['openDirectory']
     })
